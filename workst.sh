@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
@@ -62,4 +64,3 @@ VALIDATE $? "eksctl installation"
 sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
 sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 VALIDATE $? "kubens installation"
-
