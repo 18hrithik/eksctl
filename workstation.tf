@@ -7,7 +7,7 @@ module "ec2_instance" {
   #key_name               = "user1"
   #monitoring             = true
   vpc_security_group_ids = [aws_security_group.allow_eksctl.id]
-    subnet_id              = "subnet-0f151ad737c3ac73f" #replace your default subnet id
+    subnet_id              = "subnet-05aff8c3f9d36d927" #replace your default subnet id
 
   user_data = file("workst.sh")
   tags = {

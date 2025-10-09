@@ -12,7 +12,9 @@ terraform {
     bucket = "eks-hri"
     key    = "eksctl"
     region = "us-east-1"
-    dynamodb_table = "eks-locking"
+    use_lockfile = true   # ✅ replaces dynamodb_table
+
+    #dynamodb_table = "eks-locking"
   }
 }
 
